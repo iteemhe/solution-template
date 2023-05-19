@@ -1,0 +1,30 @@
+CompileFlags:
+    Add:
+        [
+            -std=c++2b,
+            -Wall,
+            -Wextra,
+            -Wpedantic,
+            -Werror=pedantic,
+            -Wconversion,
+            -Wsign-conversion,
+            -Wfloat-equal,
+            -Wshadow,
+            -Wunreachable-code,
+            -Wno-unknown-pragmas,
+            -D LOCAL,
+        ]
+
+Index:
+    Background: Skip     # Disable slow background indexing of these files.
+
+InlayHints:
+    Enabled: Yes
+    ParameterNames: Yes
+    DeducedTypes: Yes
+
+Hover:
+    ShowAKA: Yes
+
+Diagnostics:
+    UnusedIncludes: Strict
