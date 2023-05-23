@@ -66,18 +66,4 @@ auto main() -> int {
 }
 // NOLINTEND
 
-auto gcd(int x, int y) -> int {
-    if (x > y) swap(x, y);
-    if (x == 0) return y;
-    return gcd(y % x, x);
-}
-
-auto solve() -> void {
-    while (cin) {
-        int x;
-        int y;
-        see(x, y);
-        putl(gcd(x, y));
-        cout.flush();
-    }
-}
+auto solve() -> void {}
